@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Theme color -->
+  <meta name="theme-color" content="#000000" />
+
+  <!-- SEO -->
+  <title>Weapon Fitness 2 - Gym Membership Subscriptions in BSK 3rd Stage</title>
+  <meta name="description" content="Weapon Fitness 2 gym membership plans in BSK 3rd Stage, Bangalore. Monthly, quarterly, half-yearly, yearly, couple and student offers with modern equipment and certified trainers." />
+
+  <!-- Favicon & Touch Icons (update paths as per your project) -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            wfBlack: "#000000",
+            wfOrange: "#ff6a00",
+          },
+          fontFamily: {
+            sans: ["Inter", "system-ui", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Local Business Schema (can be kept on all pages) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HealthClub",
+    "name": "Weapon Fitness 2",
+    "image": "https://example.com/assets/hero-gym.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "#175, BDA Layout, 50 Feet Road, BSK 3rd Stage",
+      "addressLocality": "Bangalore",
+      "postalCode": "560085",
+      "addressRegion": "Karnataka",
+      "addressCountry": "IN"
+    },
+    "telephone": "+91-9916577094",
+    "alternateName": "Weapon Fitness 2 Gym",
+    "url": "https://example.com",
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"
+      ],
+      "opens": "05:30",
+      "closes": "22:00"
+    }],
+    "priceRange": "₹₹"
+  }
+  </script>
+</head>
+<body class="bg-wfBlack text-white font-sans antialiased">
+
+  <!-- LOADING OVERLAY -->
+  <div id="loading-overlay" class="fixed inset-0 z-50 flex items-center justify-center bg-black transition-opacity duration-300">
+    <div class="flex flex-col items-center space-y-4">
+      <div class="w-14 h-14 border-4 border-wfOrange border-t-transparent rounded-full animate-spin"></div>
+      <p class="text-sm tracking-wide text-neutral-300 uppercase">Loading Weapon Fitness 2...</p>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="bg-black/80 backdrop-blur border-b border-neutral-800 fixed w-full z-30">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between items-center h-16">
+        <a href="index.html" class="flex items-center space-x-2">
+          <div class="w-10 h-10 rounded-full bg-wfOrange flex items-center justify-center text-black font-extrabold">
+            WF2
+          </div>
+          <div class="flex flex-col leading-tight">
+            <span class="text-white font-semibold text-sm sm:text-base tracking-wide">Weapon Fitness 2</span>
+            <span class="text-xs text-neutral-400">BSK 3rd Stage, Bangalore</span>
+          </div>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
+          <a href="index.html" class="text-neutral-200 hover:text-wfOrange transition">Home</a>
+          <a href="trainers.html" class="text-neutral-200 hover:text-wfOrange transition">Trainers</a>
+          <a href="equipment.html" class="text-neutral-200 hover:text-wfOrange transition">Our Equipment</a>
+          <a href="subscriptions.html" class="text-wfOrange">Subscriptions</a>
+          <a href="gallery.html" class="text-neutral-200 hover:text-wfOrange transition">Gallery</a>
+          <a href="contact.html" class="text-neutral-200 hover:text-wfOrange transition">Contact Us</a>
+        </nav>
+
+        <!-- CTA + Mobile -->
+        <div class="flex items-center space-x-3">
+          <a href="contact.html" class="hidden sm:inline-flex bg-wfOrange text-black px-4 py-2 rounded-full text-xs sm:text-sm font-semibold shadow-lg shadow-wfOrange/40 hover:translate-y-0.5 transition-transform">
+            Get Started
+          </a>
+          <button id="mobile-menu-button" class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-neutral-200 hover:text-wfOrange border border-neutral-700">
+            <span class="sr-only">Open main menu</span>
+            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div id="mobile-menu" class="md:hidden hidden border-t border-neutral-800 bg-black/95">
+      <nav class="px-4 py-3 space-y-2 text-sm">
+        <a href="index.html" class="block text-neutral-200 hover:text-wfOrange transition">Home</a>
+        <a href="trainers.html" class="block text-neutral-200 hover:text-wfOrange transition">Trainers</a>
+        <a href="equipment.html" class="block text-neutral-200 hover:text-wfOrange transition">Our Equipment</a>
+        <a href="subscriptions.html" class="block text-wfOrange">Subscriptions</a>
+        <a href="gallery.html" class="block text-neutral-200 hover:text-wfOrange transition">Gallery</a>
+        <a href="contact.html" class="block text-neutral-200 hover:text-wfOrange transition">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="pt-24 pb-16">
+    <section class="max-w-6xl mx-auto px-4">
+      <!-- Heading -->
+      <header class="text-center mb-10">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-wide">
+          Weapon Fitness 2 Membership <span class="text-wfOrange">Subscriptions</span>
+        </h1>
+        <p class="mt-4 text-neutral-300 max-w-2xl mx-auto text-sm sm:text-base">
+          Choose the plan that fits your fitness journey. All memberships give you access to 
+          <span class="text-wfOrange">modern equipment</span>, <span class="text-wfOrange">certified trainers</span>,
+          and a motivating environment in BSK 3rd Stage, Bangalore.
+        </p>
+      </header>
+
+      <!-- SPECIAL OFFER BANNER -->
+      <section class="mb-10">
+        <div class="relative overflow-hidden rounded-2xl border border-wfOrange/60 bg-gradient-to-r from-wfOrange/10 via-black to-wfOrange/10 p-[1px]">
+          <div class="bg-black rounded-2xl px-4 sm:px-8 py-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <div>
+              <p class="text-xs uppercase tracking-[0.25em] text-wfOrange mb-1">Limited Time Opening Offer</p>
+              <h2 class="text-lg sm:text-xl font-extrabold text-white">
+                Enroll <span class="text-wfOrange">3 Memberships Together</span>
+              </h2>
+              <p class="text-sm sm:text-base text-neutral-300 mt-1">
+                Get <span class="text-wfOrange font-semibold">2 Months FREE</span> and a 
+                <span class="text-wfOrange font-semibold">FREE GYM KIT</span> (Duffle bag, Protein shaker, T-shirt, Diet chart).
+              </p>
+            </div>
+            <div class="flex flex-col items-start sm:items-end space-y-2">
+              <a href="contact.html" class="inline-flex items-center justify-center bg-wfOrange text-black font-semibold text-xs sm:text-sm px-4 py-2 rounded-full shadow-lg shadow-wfOrange/40 hover:translate-y-0.5 transition-transform">
+                Claim This Offer
+              </a>
+              <span class="text-[11px] text-neutral-500 uppercase tracking-[0.2em]">New Gym - Opening Offer</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRICING GRID -->
+      <section class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <!-- Monthly Plan -->
+        <article class="border border-neutral-800 rounded-2xl bg-gradient-to-b from-neutral-900/70 to-black p-6 flex flex-col justify-between">
+          <div>
+            <h3 class="text-lg font-bold mb-1 flex items-center justify-between">
+              <span>Monthly</span>
+              <span class="text-[11px] uppercase tracking-[0.2em] text-wfOrange">Popular</span>
+            </h3>
+            <p class="text-xs text-neutral-400 mb-4">
+              Perfect if you want to try the gym and get started quickly.
+            </p>
+
+            <div class="mb-4">
+              <p class="text-sm text-neutral-400 line-through">
+                Original Price: ₹2500/-
+              </p>
+              <p class="text-2xl font-extrabold text-wfOrange">
+                Offer Price: ₹1999/-
+              </p>
+              <p class="text-xs text-neutral-300 mt-1">
+                + ₹500/- one-time membership charge
+              </p>
+            </div>
+
+            <ul class="space-y-2 text-sm text-neutral-300">
+              <li>• Access to all gym facilities</li>
+              <li>• Modern strength & cardio equipment</li>
+              <li>• Guidance from certified trainers on floor</li>
+              <li>• Ideal for short-term fitness goals</li>
+            </ul>
+          </div>
+
+          <div class="mt-6">
+            <a href="contact.html" class="inline-flex items-center justify-center w-full bg-wfOrange text-black font-semibold text-sm py-2.5 rounded-full shadow-lg shadow-wfOrange/40 hover:translate-y-0.5 transition-transform">
+              Join Monthly Plan
+            </a>
+          </div>
+        </article>
+
+        <!-- Quarterly Plan -->
+        <article class="border border-neutral-800 rounded-2xl bg-gradient-to-b from-neutral-900/70 to-black p-6 flex flex-col justify-between">
+          <div>
+            <h3 class="text-lg font-bold mb-1">Quarterly</h3>
+            <p class="text-xs text-neutral-400 mb-4">
+              Commit for 3 months and stay consistent with your routine.
+            </p>
+
+            <div class="mb-4">
+              <p class="text-sm text-neutral-400 line-through">
+                Original Price: ₹6000/-
+              </p>
+              <p class="text-2xl font-extrabold text-wfOrange">
+                Offer Price: ₹4999/-
+              </p>
+            </div>
+
+            <ul class="space-y-2 text-sm text-neutral-300">
+              <li>• 3 months full access</li>
+              <li>• Strength, cardio & functional training</li>
+              <li>• Periodic tracking of progress</li>
+              <li>• Great for building a strong habit</li>
+            </ul>
+          </div>
+
+          <div class="mt-6">
+            <a href="contact.html" class="inline-flex items-center justify-center w-full bg-wfOrange text-black font-semibold text-sm py-2.5 rounded-full shadow-lg shadow-wfOrange/40 hover:translate-y-0.5 transition-transform">
+              Join Quarterly Plan
+            </a>
+          </div>
+        </article>
+
+        <!-- Half Yearly Plan -->
+        <article class="border border-neutral-800 rounded-2xl bg-gradient-to-b from-neutral-900/70 to-black p-6 flex flex-col justify-between">
+          <div>
+            <h3 class="text-lg font-bold mb-1">Half Yearly</h3>
+            <p class="text-xs text-neutral-400 mb-4">
+              6 months of commitment for visible transformation and strength.
+            </p>
+
+            <div class="mb-4">
+              <p class="text-sm text-neutral-400 line-through">
+                Original Price: ₹8000/-
+              </p>
+              <p class="text-2xl font-extrabold text-wfOrange">
+                Offer Price: ₹6999/-
+              </p>
+            </div>
+
+            <ul class="space-y-2 text-sm text-neutral-300">
+              <li>• 6 months membership</li>
+              <li>• Ideal for fat loss or muscle gain programs</li>
+              <li>• Consistent trainer support</li>
+              <li>• Better value than monthly plan</li>
+            </ul>
+          </div>
+
+          <div class="mt-6">
+            <a href="contact.html" class="inline-flex items-center justify-center w-full bg-wfOrange text-black font-semibold text-sm py-2.5 rounded-full shadow-lg shadow-wfOrange/40 hover:translate-y-0.5 transition-transform">
+              Join Half Yearly Plan
+            </a>
+          </div>
+        </article>
+
+        <!-- Yearly Plan -->
+        <article class="border border-wfOrange/70 rounded-2xl bg-gradient-to-b from-wfOrange/10 via-black to-black p-6 flex flex-col justify-between relative">
+          <div class="absolute top-3 right-3 px-2 py-1 rounded-full bg-wfOrange text-black text-[10px] font-bold tracking-[0.2em] uppercase">
+            Best Value
+          </div>
+          <div>
+            <h3 class="text-lg font-bold mb-1">Yearly</h3>
+            <p class="text-xs text-neutral-300 mb-4">
+              Commit for 12 months and unlock maximum savings and benefits.
+            </p>
+
+            <div class="mb-4">
+              <p class="text-sm text-neutral-400 line-through">
+                Original Price: ₹12000/-
+              </p>
+              <p class="text-2xl font-extrabold text-wfOrange">
+                Offer Price: ₹9999/-
+              </p>
+            </div>
+
+            <div class="mb-4 text-sm text-neutral-200">
+              <p class="font-semibold mb-1">FREE GYM KIT Included:</p>
+              <ul class="space-y-1">
+                <li>• Duffle bag</li>
+                <li>• Protein shaker</li>
+                <li>• Branded T-shirt</li>
+                <li>• Personalized diet chart</li>
+              </ul>
+            </div>
+
+            <ul class="space-y-2 text-sm text-neutral-300">
+              <li>• Full access throughout the year</li>
+              <li>• Ideal for long-term transformation</li>
+              <li>• Best savings over all other plans</li>
+            </ul>
+          </div>
+
+          <div class="mt-6">
+            <a href="contact.html" class="inline-flex items-center justify-center w-full bg-wfOrange text-black font-semibold text-sm py-2.5 rounded-full shadow-lg shadow-wfOrange/40 hover:translate-y-0.5 transition-transform">
+              Join Yearly Plan
+            </a>
+          </div>
+        </article>
+
+        <!-- Couple Offer (Yearly) -->
+        <article class="border border-neutral-800 rounded-2xl bg-gradient-to-b from-neutral-900/70 to-black p-6 flex flex-col justify-between">
+          <div>
+            <h3 class="text-lg font-bold mb-1">Couple Offer (Yearly)</h3>
+            <p class="text-xs text-neutral-400 mb-4">
+              Train together and stay motivated as a couple with our special yearly offer.
+            </p>
+
+            <div class="mb-4">
+              <p class="text-sm text-neutral-400 line-through">
+                Original Price: ₹17999/- (per person)
+              </p>
+              <p class="text-2xl font-extrabold text-wfOrange">
+                Offer Price: ₹9999/- <span class="text-sm text-neutral-200 font-normal">per person</span>
+              </p>
+            </div>
+
+            <ul class="space-y-2 text-sm text-neutral-300">
+              <li>• Yearly membership for both</li>
+              <li>• Perfect for couples / friends</li>
+              <li>• Shared motivation and accountability</li>
+              <li>• High-value pricing per person</li>
+            </ul>
+          </div>
+
+          <div class="mt-6">
+            <a href="contact.html" class="inline-flex items-center justify-center w-full bg-wfOrange text-black font-semibold text-sm py-2.5 rounded-full shadow-lg shadow-wfOrange/40 hover:translate-y-0.5 transition-transform">
+              Enquire About Couple Offer
+            </a>
+          </div>
+        </article>
+
+        <!-- Student Offer (Yearly) -->
+        <article class="border border-neutral-800 rounded-2xl bg-gradient-to-b from-neutral-900/70 to-black p-6 flex flex-col justify-between">
+          <div>
+            <h3 class="text-lg font-bold mb-1">Student Offer (Yearly)</h3>
+            <p class="text-xs text-neutral-400 mb-4">
+              Special pricing for students to stay fit throughout the academic year.
+            </p>
+
+            <div class="mb-4">
+              <p class="text-sm text-neutral-400 line-through">
+                Original Price: ₹10000/-
+              </p>
+              <p class="text-2xl font-extrabold text-wfOrange">
+                Offer Price: ₹8999/-
+              </p>
+              <p class="mt-1 text-xs text-neutral-300">
+                <span class="font-semibold text-wfOrange">Note:</span> Student ID card & fee receipt are mandatory.
+              </p>
+            </div>
+
+            <ul class="space-y-2 text-sm text-neutral-300">
+              <li>• Full year membership for students</li>
+              <li>• Balanced for academics and fitness</li>
+              <li>• Access to all gym zones</li>
+              <li>• Budget-friendly transformation plan</li>
+            </ul>
+          </div>
+
+          <div class="mt-6">
+            <a href="contact.html" class="inline-flex items-center justify-center w-full bg-wfOrange text-black font-semibold text-sm py-2.5 rounded-full shadow-lg shadow-wfOrange/40 hover:translate-y-0.5 transition-transform">
+              Enquire About Student Offer
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <!-- Bottom Note -->
+      <section class="mt-10 text-center text-xs sm:text-sm text-neutral-400 max-w-3xl mx-auto">
+        <p>
+          All prices are inclusive of access to modern gym equipment and certified trainers.
+          For detailed terms, timings, and current promotions, please contact us directly or chat on WhatsApp.
+        </p>
+      </section>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-black border-top border-neutral-800 mt-16">
+    <div class="max-w-6xl mx-auto px-4 py-10 grid gap-8 md:grid-cols-3 text-sm text-neutral-300 border-t border-neutral-800">
+      <div>
+        <h3 class="font-semibold text-white mb-2">Weapon Fitness 2</h3>
+        <p class="text-neutral-400">
+          #175, BDA Layout, 50 Feet Road,<br/>
+          BSK 3rd Stage, Bangalore-85.<br/>
+          Above HDFC Bank.
+        </p>
+        <p class="mt-2 text-neutral-400">
+          Ph: 
+          <a href="tel:+918050577094" class="hover:text-wfOrange">8050577094</a> /
+          <a href="tel:+919916577094" class="hover:text-wfOrange">9916577094</a>
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-white mb-2">Quick Links</h3>
+        <div class="flex flex-col space-y-1">
+          <a href="index.html" class="hover:text-wfOrange">Home</a>
+          <a href="subscriptions.html" class="hover:text-wfOrange">Subscriptions</a>
+          <a href="contact.html" class="hover:text-wfOrange">Contact Us</a>
+        </div>
+      </div>
+
+      <div class="flex flex-col space-y-3">
+        <h3 class="font-semibold text-white">Ready to Start?</h3>
+        <p class="text-neutral-400">
+          Take the first step towards your transformation today.
+        </p>
+        <a href="contact.html" class="inline-flex items-center justify-center bg-wfOrange text-black px-4 py-2 rounded-full text-sm font-semibold shadow-lg shadow-wfOrange/40 hover:translate-y-0.5 transition-transform">
+          Get Started
+        </a>
+      </div>
+    </div>
+
+    <div class="border-t border-neutral-800 py-3 text-center text-xs text-neutral-500">
+      © <span id="year-span"></span> Weapon Fitness 2. All rights reserved.
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const y = document.getElementById("year-span");
+        if (y) y.textContent = new Date().getFullYear();
+      });
+    </script>
+  </footer>
+
+  <!-- STICKY WHATSAPP BUTTON -->
+  <a href="https://wa.me/919916577094" target="_blank"
+     class="fixed bottom-4 right-4 z-40 inline-flex items-center justify-center w-12 h-12 rounded-full bg-wfOrange text-black shadow-lg shadow-wfOrange/40 hover:scale-105 transition-transform"
+     aria-label="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.04 2C6.58 2 2.21 6.37 2.21 11.83c0 2.08.61 4.07 1.77 5.81L2 22l4.5-1.93c1.67.92 3.56 1.4 5.54 1.4h.01c5.46 0 9.83-4.37 9.83-9.83C21.88 6.37 17.5 2 12.04 2zm5.73 13.7c-.24.68-1.21 1.29-1.68 1.33-.43.04-.98.06-1.58-.1-.36-.09-.83-.27-1.44-.53-2.54-1.1-4.19-3.65-4.32-3.82-.13-.18-1.03-1.37-1.03-2.61 0-1.24.65-1.84.88-2.09.24-.26.52-.32.69-.32h.5c.16 0 .38-.06.6.46.24.57.82 1.97.89 2.11.07.15.12.32.02.5-.1.18-.15.29-.3.45-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.18.3.79 1.3 1.69 2.11 1.16 1.03 2.09 1.35 2.43 1.51.25.12.55.09.73-.05.23-.18.52-.47.82-.88.21-.3.47-.34.75-.23.28.1 1.77.83 2.08.98.31.15.51.23.59.36.08.13.08.71-.16 1.39z"/>
+    </svg>
+  </a>
+
+  <!-- GLOBAL JS (mobile menu, loader, etc.) -->
+  <script src="assets/app.js"></script>
+</body>
+</html>

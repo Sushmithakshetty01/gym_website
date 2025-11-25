@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="theme-color" content="#000000" />
+  <title>Weapon Fitness 2 - Modern Gym Equipment in BSK 3rd Stage Bangalore</title>
+  <meta
+    name="description"
+    content="Explore the modern cardio deck, strength training zone, resistance machines, and functional training area at Weapon Fitness 2, BSK 3rd Stage, Bangalore."
+  />
+
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            wfBlack: "#000000",
+            wfOrange: "#ff6a00",
+          },
+          fontFamily: {
+            sans: ["Inter", "system-ui", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-black text-white font-sans">
+  <!-- LOADING OVERLAY -->
+  <div
+    id="loading-overlay"
+    class="fixed inset-0 bg-black flex items-center justify-center z-50 transition-opacity duration-300"
+  >
+    <div class="flex flex-col items-center space-y-4">
+      <div class="w-12 h-12 border-4 border-neutral-700 border-t-wfOrange rounded-full animate-spin"></div>
+      <p class="text-sm tracking-wide text-neutral-300">
+        Loading Weapon Fitness 2...
+      </p>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="bg-black/80 backdrop-blur border-b border-neutral-800 fixed w-full z-40">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between items-center h-16">
+        <a href="index.html" class="flex items-center space-x-2">
+          <div class="w-10 h-10 rounded-full bg-wfOrange flex items-center justify-center text-black font-extrabold">
+            WF2
+          </div>
+          <div class="flex flex-col leading-tight">
+            <span class="text-white font-semibold text-sm sm:text-base tracking-wide">Weapon Fitness 2</span>
+            <span class="text-xs text-neutral-400">BSK 3rd Stage, Bangalore</span>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
+          <a href="index.html" class="text-neutral-200 hover:text-wfOrange transition">Home</a>
+          <a href="trainers.html" class="text-neutral-200 hover:text-wfOrange transition">Trainers</a>
+          <a href="equipment.html" class="text-wfOrange">Our Equipment</a>
+          <a href="subscriptions.html" class="text-neutral-200 hover:text-wfOrange transition">Subscriptions</a>
+          <a href="gallery.html" class="text-neutral-200 hover:text-wfOrange transition">Gallery</a>
+          <a href="contact.html" class="text-neutral-200 hover:text-wfOrange transition">Contact Us</a>
+        </nav>
+
+        <div class="flex items-center space-x-3">
+          <a
+            href="contact.html"
+            class="hidden sm:inline-flex bg-wfOrange text-black px-4 py-2 rounded-full text-xs sm:text-sm font-semibold shadow-lg shadow-wfOrange/40 hover:translate-y-0.5 transition-transform"
+          >
+            Get Started
+          </a>
+          <button
+            id="mobile-menu-button"
+            class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-neutral-200 hover:text-wfOrange border border-neutral-700"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="md:hidden hidden border-t border-neutral-800 bg-black/95">
+      <nav class="px-4 py-3 space-y-2 text-sm">
+        <a href="index.html" class="block text-neutral-200 hover:text-wfOrange transition">Home</a>
+        <a href="trainers.html" class="block text-neutral-200 hover:text-wfOrange transition">Trainers</a>
+        <a href="equipment.html" class="block text-wfOrange">Our Equipment</a>
+        <a href="subscriptions.html" class="block text-neutral-200 hover:text-wfOrange transition">Subscriptions</a>
+        <a href="gallery.html" class="block text-neutral-200 hover:text-wfOrange transition">Gallery</a>
+        <a href="contact.html" class="block text-neutral-200 hover:text-wfOrange transition">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pt-20">
+    <section class="bg-black py-16">
+      <div class="max-w-6xl mx-auto px-4">
+        <h1 class="text-3xl sm:text-4xl font-bold mb-3">
+          Weapon Fitness 2 Gym Equipment in BSK 3rd Stage, Bangalore
+        </h1>
+        <p class="text-neutral-400 text-sm max-w-2xl mb-8">
+          Our facility is equipped with a full cardio deck, strength training area, resistance machines, and
+          a functional training zone designed for CrossFit and group classes.
+        </p>
+
+        <div class="space-y-10">
+          <!-- Cardio Deck -->
+          <section>
+            <h2 class="text-xl sm:text-2xl font-semibold mb-2">Cardio Deck</h2>
+            <p class="text-neutral-400 text-sm mb-4">
+              Treadmills, ellipticals, and bikes with heart-rate monitors to support weight loss, endurance,
+              and warm-ups.
+            </p>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              <img
+                src="assets/equip-cardio-1.webp"
+                alt="Cardio deck treadmills at Weapon Fitness 2"
+                class="rounded-xl border border-neutral-800 object-cover h-48 w-full"
+                loading="lazy"
+              />
+              <img
+                src="assets/equip-cardio-2.webp"
+                alt="Ellipticals at Weapon Fitness 2 gym"
+                class="rounded-xl border border-neutral-800 object-cover h-48 w-full"
+                loading="lazy"
+              />
+              <img
+                src="assets/equip-cardio-3.webp"
+                alt="Cardio machines at Weapon Fitness 2"
+                class="rounded-xl border border-neutral-800 object-cover h-48 w-full"
+                loading="lazy"
+              />
+            </div>
+          </section>
+
+          <!-- Strength Training -->
+          <section>
+            <h2 class="text-xl sm:text-2xl font-semibold mb-2">Strength Training Area</h2>
+            <p class="text-neutral-400 text-sm mb-4">
+              Free weights, benches, barbells, and squat racks for building lean muscle and strength safely.
+            </p>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              <img
+                src="assets/equip-strength-1.webp"
+                alt="Strength training benches and dumbbells at Weapon Fitness 2"
+                class="rounded-xl border border-neutral-800 object-cover h-48 w-full"
+                loading="lazy"
+              />
+              <img
+                src="assets/equip-strength-2.webp"
+                alt="Free weights and barbells at Weapon Fitness 2 gym"
+                class="rounded-xl border border-neutral-800 object-cover h-48 w-full"
+                loading="lazy"
+              />
+              <img
+                src="assets/equip-strength-3.webp"
+                alt="Strength zone at Weapon Fitness 2 in BSK 3rd Stage"
+                class="rounded-xl border border-neutral-800 object-cover h-48 w-full"
+                loading="lazy"
+              />
+            </div>
+          </section>
+
+          <!-- Resistance Machines -->
+          <section>
+            <h2 class="text-xl sm:text-2xl font-semibold mb-2">Resistance Machines</h2>
+            <p class="text-neutral-400 text-sm mb-4">
+              Target specific muscle groups with guided resistance machines suitable for both beginners and
+              advanced members.
+            </p>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              <img
+                src="assets/equip-resistance-1.webp"
+                alt="Resistance machines at Weapon Fitness 2 gym"
+                class="rounded-xl border border-neutral-800 object-cover h-48 w-full"
+                loading="lazy"
+              />
+              <img
+                src="assets/equip-resistance-2.webp"
+                alt="Strength machines for back and chest at Weapon Fitness 2"
+                class="rounded-xl border border-neutral-800 object-cover h-48 w-full"
+                loading="lazy"
+              />
+              <img
+                src="assets/equip-resistance-3.webp"
+                alt="Leg and shoulder machines at Weapon Fitness 2"
+                class="rounded-xl border border-neutral-800 object-cover h-48 w-full"
+                loading="lazy"
+              />
+            </div>
+          </section>
+
+          <!-- Functional Training Area -->
+          <section>
+            <h2 class="text-xl sm:text-2xl font-semibold mb-2">Functional Training & Group Class Area</h2>
+            <p class="text-neutral-400 text-sm mb-4">
+              Dedicated space for CrossFit-style workouts, kettlebell training, battle ropes, bodyweight
+              exercises, and energetic group classes.
+            </p>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              <img
+                src="assets/equip-functional-1.webp"
+                alt="Functional training area at Weapon Fitness 2"
+                class="rounded-xl border border-neutral-800 object-cover h-48 w-full"
+                loading="lazy"
+              />
+              <img
+                src="assets/equip-functional-2.webp"
+                alt="Group class space at Weapon Fitness 2 gym"
+                class="rounded-xl border border-neutral-800 object-cover h-48 w-full"
+                loading="lazy"
+              />
+              <img
+                src="assets/equip-functional-3.webp"
+                alt="CrossFit style equipment at Weapon Fitness 2"
+                class="rounded-xl border border-neutral-800 object-cover h-48 w-full"
+                loading="lazy"
+              />
+            </div>
+          </section>
+        </div>
+
+        <div class="mt-10">
+          <a
+            href="subscriptions.html"
+            class="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-wfOrange text-black text-sm font-semibold shadow shadow-wfOrange/40 hover:translate-y-0.5 transition-transform"
+          >
+            View Membership Plans
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-black border-t border-neutral-800 mt-16">
+    <div class="max-w-6xl mx-auto px-4 py-10 grid gap-8 md:grid-cols-3 text-sm text-neutral-300">
+      <div>
+        <h3 class="font-semibold text-white mb-2">Weapon Fitness 2</h3>
+        <p class="text-neutral-400">
+          #175, BDA Layout, 50 Feet Road,<br />
+          BSK 3rd Stage, Bangalore-85.<br />
+          Above HDFC Bank.
+        </p>
+        <p class="mt-2 text-neutral-400">
+          Ph:
+          <a href="tel:+918050577094" class="hover:text-wfOrange">8050577094</a> /
+          <a href="tel:+919916577094" class="hover:text-wfOrange">9916577094</a>
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-white mb-2">Quick Links</h3>
+        <div class="flex flex-col space-y-1">
+          <a href="index.html" class="hover:text-wfOrange">Home</a>
+          <a href="subscriptions.html" class="hover:text-wfOrange">Subscriptions</a>
+          <a href="contact.html" class="hover:text-wfOrange">Contact Us</a>
+        </div>
+      </div>
+
+      <div class="flex flex-col space-y-3">
+        <h3 class="font-semibold text-white">Ready to Start?</h3>
+        <p class="text-neutral-400">
+          Take the first step towards your transformation today.
+        </p>
+        <a
+          href="contact.html"
+          class="inline-flex items-center justify-center bg-wfOrange text-black px-4 py-2 rounded-full text-sm font-semibold shadow-lg shadow-wfOrange/40 hover:translate-y-0.5 transition-transform"
+        >
+          Get Started
+        </a>
+      </div>
+    </div>
+
+    <div class="border-t border-neutral-800 py-3 text-center text-xs text-neutral-500">
+      © <span id="year-span"></span> Weapon Fitness 2. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- STICKY WHATSAPP -->
+  <a
+    href="https://wa.me/919916577094"
+    target="_blank"
+    class="fixed bottom-4 right-4 z-50 inline-flex items-center justify-center w-12 h-12 rounded-full bg-wfOrange text-black shadow-lg shadow-wfOrange/40 hover:scale-105 transition-transform"
+    aria-label="Chat on WhatsApp"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M12.04 2C6.58 2 2.21 6.37 2.21 11.83c0 2.08.61 4.1 1.77 5.83L2 22l4.5-1.94c1.67.92 3.55 1.4 5.54 1.4h.01c5.46 0 9.83-4.37 9.83-9.83C21.88 6.37 17.5 2 12.04 2zm5.7 14.24c-.24.68-1.38 1.31-1.9 1.39-.49.07-1.1.1-1.79-.11-.41-.13-.94-.3-1.62-.59-2.85-1.23-4.7-4.11-4.85-4.3-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.08.99-2.37.26-.29.57-.36.76-.36h.55c.18 0 .42-.07.66.5.24.59.82 2.03.89 2.17.07.14.12.31.02.5-.1.19-.15.31-.3.49-.15.17-.31.39-.44.52-.15.15-.3.31-.13.6.17.29.75 1.23 1.61 2 .1.09 1.82 1.61 3.12 2.15.44.19.78.3 1.05.39.44.14.84.12 1.16.07.35-.05 1.08-.44 1.23-.87.15-.43.15-.8.1-.87-.05-.07-.19-.12-.39-.22z"
+      />
+    </svg>
+  </a>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

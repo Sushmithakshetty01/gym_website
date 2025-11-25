@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Theme color -->
+  <meta name="theme-color" content="#000000" />
+
+  <!-- SEO -->
+  <title>Weapon Fitness 2 - Gym Gallery & Transformations in BSK 3rd Stage</title>
+  <meta name="description" content="View Weapon Fitness 2 gym gallery including client transformations, modern equipment, and facility photos in BSK 3rd Stage, Bangalore." />
+
+  <!-- Favicon & Touch Icons -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            wfBlack: "#000000",
+            wfOrange: "#ff6a00",
+          },
+          fontFamily: {
+            sans: ["Inter", "system-ui", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Local Business Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HealthClub",
+    "name": "Weapon Fitness 2",
+    "image": "https://example.com/assets/hero-gym.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "#175, BDA Layout, 50 Feet Road, BSK 3rd Stage",
+      "addressLocality": "Bangalore",
+      "postalCode": "560085",
+      "addressRegion": "Karnataka",
+      "addressCountry": "IN"
+    },
+    "telephone": "+91-9916577094",
+    "alternateName": "Weapon Fitness 2 Gym",
+    "url": "https://example.com",
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"
+      ],
+      "opens": "05:30",
+      "closes": "22:00"
+    }],
+    "priceRange": "₹₹"
+  }
+  </script>
+</head>
+<body class="bg-wfBlack text-white font-sans antialiased">
+
+  <!-- LOADING OVERLAY -->
+  <div id="loading-overlay" class="fixed inset-0 z-50 flex items-center justify-center bg-black transition-opacity duration-300">
+    <div class="flex flex-col items-center space-y-4">
+      <div class="w-14 h-14 border-4 border-wfOrange border-t-transparent rounded-full animate-spin"></div>
+      <p class="text-sm tracking-wide text-neutral-300 uppercase">Loading Weapon Fitness 2...</p>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="bg-black/80 backdrop-blur border-b border-neutral-800 fixed w-full z-30">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between items-center h-16">
+        <a href="index.html" class="flex items-center space-x-2">
+          <div class="w-10 h-10 rounded-full bg-wfOrange flex items-center justify-center text-black font-extrabold">
+            WF2
+          </div>
+          <div class="flex flex-col leading-tight">
+            <span class="text-white font-semibold text-sm sm:text-base tracking-wide">Weapon Fitness 2</span>
+            <span class="text-xs text-neutral-400">BSK 3rd Stage, Bangalore</span>
+          </div>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
+          <a href="index.html" class="text-neutral-200 hover:text-wfOrange transition">Home</a>
+          <a href="trainers.html" class="text-neutral-200 hover:text-wfOrange transition">Trainers</a>
+          <a href="equipment.html" class="text-neutral-200 hover:text-wfOrange transition">Our Equipment</a>
+          <a href="subscriptions.html" class="text-neutral-200 hover:text-wfOrange transition">Subscriptions</a>
+          <a href="gallery.html" class="text-wfOrange">Gallery</a>
+          <a href="contact.html" class="text-neutral-200 hover:text-wfOrange transition">Contact Us</a>
+        </nav>
+
+        <!-- CTA + Mobile -->
+        <div class="flex items-center space-x-3">
+          <a href="contact.html" class="hidden sm:inline-flex bg-wfOrange text-black px-4 py-2 rounded-full text-xs sm:text-sm font-semibold shadow-lg shadow-wfOrange/40 hover:translate-y-0.5 transition-transform">
+            Get Started
+          </a>
+          <button id="mobile-menu-button" class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-neutral-200 hover:text-wfOrange border border-neutral-700">
+            <span class="sr-only">Open main menu</span>
+            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div id="mobile-menu" class="md:hidden hidden border-t border-neutral-800 bg-black/95">
+      <nav class="px-4 py-3 space-y-2 text-sm">
+        <a href="index.html" class="block text-neutral-200 hover:text-wfOrange transition">Home</a>
+        <a href="trainers.html" class="block text-neutral-200 hover:text-wfOrange transition">Trainers</a>
+        <a href="equipment.html" class="block text-neutral-200 hover:text-wfOrange transition">Our Equipment</a>
+        <a href="subscriptions.html" class="block text-neutral-200 hover:text-wfOrange transition">Subscriptions</a>
+        <a href="gallery.html" class="block text-wfOrange">Gallery</a>
+        <a href="contact.html" class="block text-neutral-200 hover:text-wfOrange transition">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="pt-24 pb-16">
+    <section class="max-w-6xl mx-auto px-4 space-y-10">
+      <!-- Heading -->
+      <header class="text-center">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-wide">
+          Weapon Fitness 2 <span class="text-wfOrange">Gallery</span>
+        </h1>
+        <p class="mt-4 text-sm sm:text-base text-neutral-300 max-w-2xl mx-auto">
+          Explore real client transformations, our modern gym equipment, and the energetic training
+          environment at Weapon Fitness 2, BSK 3rd Stage.
+        </p>
+        <!-- Developer Note text (clear on page) -->
+        <p class="mt-3 text-xs sm:text-sm text-wfOrange font-semibold uppercase tracking-[0.25em]">
+          THIS PAGE IS THE PRIMARY DESTINATION FOR ALL CLIENT TRANSFORMATION IMAGES.
+        </p>
+      </header>
+
+      <!-- Trailer / Video Section (optional) -->
+      <section class="space-y-4">
+        <h2 class="text-lg font-bold">Gym Trailer</h2>
+        <p class="text-sm text-neutral-300 max-w-2xl">
+          Watch the Weapon Fitness 2 trailer to get a quick feel of the atmosphere, equipment, and training energy.
+        </p>
+        <div class="aspect-video w-full border border-neutral-800 rounded-2xl overflow-hidden">
+          <!-- Replace with your YouTube trailer link -->
+          <iframe
+            class="w-full h-full"
+            src="https://www.youtube.com/embed/uGFZTSCeUzQ"
+            title="Weapon Fitness 2 Gym Trailer"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="lazy"></iframe>
+        </div>
+      </section>
+
+      <!-- Transformations Grid -->
+      <section class="space-y-4">
+        <div class="flex items-center justify-between flex-wrap gap-2">
+          <h2 class="text-lg font-bold">Client Transformations</h2>
+          <p class="text-xs text-neutral-400">
+            Real results from members who trained with modern equipment & certified trainers.
+          </p>
+        </div>
+
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- Transformation Card 1 -->
+          <article class="border border-neutral-800 rounded-2xl bg-neutral-900/40 p-3 space-y-3">
+            <div class="grid grid-cols-2 gap-2">
+              <div class="relative group cursor-pointer" data-lightbox-src="assets/transformation1-after.jpg">
+                <img src="assets/transformation1-before.jpg" alt="Before transformation member 1"
+                     class="w-full h-40 object-cover rounded-lg border border-neutral-800 group-hover:opacity-80 transition" />
+                <span class="absolute top-1 left-1 bg-black/80 text-[10px] px-2 py-0.5 rounded-full uppercase tracking-[0.2em] text-neutral-200">
+                  Before
+                </span>
+              </div>
+              <div class="relative group cursor-pointer" data-lightbox-src="assets/transformation1-after.jpg">
+                <img src="assets/transformation1-after.jpg" alt="After transformation member 1"
+                     class="w-full h-40 object-cover rounded-lg border border-neutral-800 group-hover:opacity-80 transition" />
+                <span class="absolute top-1 left-1 bg-wfOrange text-[10px] px-2 py-0.5 rounded-full uppercase tracking-[0.2em] text-black font-bold">
+                  After
+                </span>
+              </div>
+            </div>
+            <div class="space-y-1">
+              <h3 class="text-sm font-semibold">12-Month Fat Loss Journey</h3>
+              <p class="text-xs text-neutral-300">
+                Combination of strength training, cardio, and diet guidance for sustainable weight loss.
+              </p>
+            </div>
+          </article>
+
+          <!-- Transformation Card 2 -->
+          <article class="border border-neutral-800 rounded-2xl bg-neutral-900/40 p-3 space-y-3">
+            <div class="grid grid-cols-2 gap-2">
+              <div class="relative group cursor-pointer" data-lightbox-src="assets/transformation2-after.jpg">
+                <img src="assets/transformation2-before.jpg" alt="Before transformation member 2"
+                     class="w-full h-40 object-cover rounded-lg border border-neutral-800 group-hover:opacity-80 transition" />
+                <span class="absolute top-1 left-1 bg-black/80 text-[10px] px-2 py-0.5 rounded-full uppercase tracking-[0.2em] text-neutral-200">
+                  Before
+                </span>
+              </div>
+              <div class="relative group cursor-pointer" data-lightbox-src="assets/transformation2-after.jpg">
+                <img src="assets/transformation2-after.jpg" alt="After transformation member 2"
+                     class="w-full h-40 object-cover rounded-lg border border-neutral-800 group-hover:opacity-80 transition" />
+                <span class="absolute top-1 left-1 bg-wfOrange text-[10px] px-2 py-0.5 rounded-full uppercase tracking-[0.2em] text-black font-bold">
+                  After
+                </span>
+              </div>
+            </div>
+            <div class="space-y-1">
+              <h3 class="text-sm font-semibold">Muscle Gain & Strength Program</h3>
+              <p class="text-xs text-neutral-300">
+                Progressive overload with free weights and resistance machines to build lean muscle.
+              </p>
+            </div>
+          </article>
+
+          <!-- Transformation Card 3 -->
+          <article class="border border-neutral-800 rounded-2xl bg-neutral-900/40 p-3 space-y-3">
+            <div class="grid grid-cols-2 gap-2">
+              <div class="relative group cursor-pointer" data-lightbox-src="assets/transformation3-after.jpg">
+                <img src="assets/transformation3-before.jpg" alt="Before transformation member 3"
+                     class="w-full h-40 object-cover rounded-lg border border-neutral-800 group-hover:opacity-80 transition" />
+                <span class="absolute top-1 left-1 bg-black/80 text-[10px] px-2 py-0.5 rounded-full uppercase tracking-[0.2em] text-neutral-200">
+                  Before
+                </span>
+              </div>
+              <div class="relative group cursor-pointer" data-lightbox-src="assets/transformation3-after.jpg">
+                <img src="assets/transformation3-after.jpg" alt="After transformation member 3"
+                     class="w-full h-40 object-cover rounded-lg border border-neutral-800 group-hover:opacity-80 transition" />
+                <span class="absolute top-1 left-1 bg-wfOrange text-[10px] px-2 py-0.5 rounded-full uppercase tracking-[0.2em] text-black font-bold">
+                  After
+                </span>
+              </div>
+            </div>
+            <div class="space-y-1">
+              <h3 class="text-sm font-semibold">Overall Fitness & Conditioning</h3>
+              <p class="text-xs text-neutral-300">
+                Mix of CrossFit-style functional training and cardio for stamina, agility, and toning.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Gym & Equipment Photos -->
+      <section class="space-y-4">
+        <div class="flex items-center justify-between flex-wrap gap-2">
+          <h2 class="text-lg font-bold">Gym & Equipment</h2>
+          <p class="text-xs text-neutral-400">
+            High-quality equipment and spacious training floors designed for every fitness level.
+          </p>
+        </div>
+
+        <div class="grid gap-3 sm:grid-cols-3">
+          <!-- Photo 1 -->
+          <div class="relative group cursor-pointer" data-lightbox-src="assets/gallery-gym-1.jpg">
+            <img src="assets/gallery-gym-1.jpg" alt="Weapon Fitness 2 gym floor"
+                 class="w-full h-40 sm:h-48 object-cover rounded-xl border border-neutral-800 group-hover:opacity-80 transition" />
+          </div>
+          <!-- Photo 2 -->
+          <div class="relative group cursor-pointer" data-lightbox-src="assets/gallery-gym-2.jpg">
+            <img src="assets/gallery-gym-2.jpg" alt="Cardio deck at Weapon Fitness 2"
+                 class="w-full h-40 sm:h-48 object-cover rounded-xl border border-neutral-800 group-hover:opacity-80 transition" />
+          </div>
+          <!-- Photo 3 -->
+          <div class="relative group cursor-pointer" data-lightbox-src="assets/gallery-gym-3.jpg">
+            <img src="assets/gallery-gym-3.jpg" alt="Strength training zone at Weapon Fitness 2"
+                 class="w-full h-40 sm:h-48 object-cover rounded-xl border border-neutral-800 group-hover:opacity-80 transition" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Group Classes / Videos -->
+      <section class="space-y-4">
+        <div class="flex items-center justify-between flex-wrap gap-2">
+          <h2 class="text-lg font-bold">Group Classes & Energy</h2>
+          <p class="text-xs text-neutral-400">
+            Aerobics, strengthening, CrossFit, and cardio sessions that keep you energized.
+          </p>
+        </div>
+
+        <div class="grid gap-4 md:grid-cols-2">
+          <!-- Class Image -->
+          <div class="relative group cursor-pointer" data-lightbox-src="assets/gallery-class-1.jpg">
+            <img src="assets/gallery-class-1.jpg" alt="Group class at Weapon Fitness 2"
+                 class="w-full h-52 object-cover rounded-2xl border border-neutral-800 group-hover:opacity-80 transition" />
+          </div>
+          <!-- Another Image or Video Thumbnail -->
+          <div class="relative group cursor-pointer" data-lightbox-src="assets/gallery-class-2.jpg">
+            <img src="assets/gallery-class-2.jpg" alt="High-intensity group workout"
+                 class="w-full h-52 object-cover rounded-2xl border border-neutral-800 group-hover:opacity-80 transition" />
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <!-- LIGHTBOX OVERLAY -->
+  <div id="lightbox" class="hidden fixed inset-0 z-40 bg-black/90 flex items-center justify-center px-4">
+    <button id="lightbox-close"
+            class="absolute top-4 right-4 text-neutral-300 hover:text-white text-2xl font-bold">
+      ×
+    </button>
+    <img id="lightbox-image" src="" alt="Expanded gallery image"
+         class="max-h-[80vh] max-w-full rounded-xl border border-neutral-700" />
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-black border-t border-neutral-800 mt-16">
+    <div class="max-w-6xl mx-auto px-4 py-10 grid gap-8 md:grid-cols-3 text-sm text-neutral-300">
+      <div>
+        <h3 class="font-semibold text-white mb-2">Weapon Fitness 2</h3>
+        <p class="text-neutral-400">
+          #175, BDA Layout, 50 Feet Road,<br/>
+          BSK 3rd Stage, Bangalore-85.<br/>
+          Above HDFC Bank.
+        </p>
+        <p class="mt-2 text-neutral-400">
+          Ph:
+          <a href="tel:+918050577094" class="hover:text-wfOrange">8050577094</a> /
+          <a href="tel:+919916577094" class="hover:text-wfOrange">9916577094</a>
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-white mb-2">Quick Links</h3>
+        <div class="flex flex-col space-y-1">
+          <a href="index.html" class="hover:text-wfOrange">Home</a>
+          <a href="subscriptions.html" class="hover:text-wfOrange">Subscriptions</a>
+          <a href="contact.html" class="hover:text-wfOrange">Contact Us</a>
+        </div>
+      </div>
+
+      <div class="flex flex-col space-y-3">
+        <h3 class="font-semibold text-white">Ready to Start?</h3>
+        <p class="text-neutral-400">
+          Take the first step towards your transformation today.
+        </p>
+        <a href="contact.html" class="inline-flex items-center justify-center bg-wfOrange text-black px-4 py-2 rounded-full text-sm font-semibold shadow-lg shadow-wfOrange/40 hover:translate-y-0.5 transition-transform">
+          Get Started
+        </a>
+      </div>
+    </div>
+
+    <div class="border-t border-neutral-800 py-3 text-center text-xs text-neutral-500">
+      © <span id="year-span"></span> Weapon Fitness 2. All rights reserved.
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const y = document.getElementById("year-span");
+        if (y) y.textContent = new Date().getFullYear();
+      });
+    </script>
+  </footer>
+
+  <!-- STICKY WHATSAPP BUTTON -->
+  <a href="https://wa.me/919916577094" target="_blank"
+     class="fixed bottom-4 right-4 z-40 inline-flex items-center justify-center w-12 h-12 rounded-full bg-wfOrange text-black shadow-lg shadow-wfOrange/40 hover:scale-105 transition-transform"
+     aria-label="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.04 2C6.58 2 2.21 6.37 2.21 11.83c0 2.08.61 4.07 1.77 5.81L2 22l4.5-1.93c1.67.92 3.56 1.4 5.54 1.4h.01c5.46 0 9.83-4.37 9.83-9.83C21.88 6.37 17.5 2 12.04 2zm5.73 13.7c-.24.68-1.21 1.29-1.68 1.33-.43.04-.98.06-1.58-.1-.36-.09-.83-.27-1.44-.53-2.54-1.1-4.19-3.65-4.32-3.82-.13-.18-1.03-1.37-1.03-2.61 0-1.24.65-1.84.88-2.09.24-.26.52-.32.69-.32h.5c.16 0 .38-.06.6.46.24.57.82 1.97.89 2.11.07.15.12.32.02.5-.1.18-.15.29-.3.45-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.18.3.79 1.3 1.69 2.11 1.16 1.03 2.09 1.35 2.43 1.51.25.12.55.09.73-.05.23-.18.52-.47.82-.88.21-.3.47-.34.75-.23.28.1 1.77.83 2.08.98.31.15.51.23.59.36.08.13.08.71-.16 1.39z"/>
+    </svg>
+  </a>
+
+  <!-- GLOBAL JS -->
+  <script src="assets/app.js"></script>
+</body>
+</html>
